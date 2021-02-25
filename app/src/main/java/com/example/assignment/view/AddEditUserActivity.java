@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.assignment.R;
 import com.example.assignment.utils.Constant;
 
+/**
+ * @class AddEditUserActivity, This class is used for adding Users.
+ */
 public class AddEditUserActivity extends AppCompatActivity {
 
     private EditText edtName;
