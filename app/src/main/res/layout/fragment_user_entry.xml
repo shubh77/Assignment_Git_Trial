@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin"
+        tools:context=".Fragments.UserEntryFragment">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:src="@mipmap/user_icon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:hint="Enter Name"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Enter Phone No"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_phone_no"
+            android:hint="DOB"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_dob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="@string/btn_save"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+</layout>
